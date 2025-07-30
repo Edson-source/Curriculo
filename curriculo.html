@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Edson Ney Martins Júnior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #cbd5e1; /* slate-300 */
+        }
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.5); /* slate-800 com 50% opacidade */
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background-color: #334155; /* slate-700 */
+            border-radius: 2px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #38bdf8; /* sky-400 */
+            border: 2px solid #0f172a; /* slate-900 */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-6xl mx-auto">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-x-12">
+            
+            <!-- Barra Lateral Esquerda -->
+            <aside class="lg:col-span-4 lg:sticky lg:top-0 lg:h-screen p-4 sm:p-6 lg:p-8 fade-in">
+                <div class="flex flex-col justify-between h-full">
+                    <div>
+                        <h1 class="text-4xl font-bold text-white">Edson Ney</h1>
+                        <h2 class="text-xl mt-2 font-medium text-slate-200">Engenheiro de Computação</h2>
+                        <p class="mt-3 text-slate-400 leading-relaxed">Apaixonado pelo desenvolvimento de soluções de hardware e sistemas embarcados.</p>
+                        
+                        <nav class="hidden lg:block mt-12">
+                            <ul class="space-y-3 text-slate-400">
+                                <li><a href="#experiencia" class="group flex items-center gap-2 py-1 hover:text-sky-400 transition-colors"><span class="h-px w-8 bg-slate-500 group-hover:bg-sky-400 transition-colors"></span>Experiência</a></li>
+                                <li><a href="#projetos" class="group flex items-center gap-2 py-1 hover:text-sky-400 transition-colors"><span class="h-px w-8 bg-slate-500 group-hover:bg-sky-400 transition-colors"></span>Projetos</a></li>
+                                <li><a href="#habilidades" class="group flex items-center gap-2 py-1 hover:text-sky-400 transition-colors"><span class="h-px w-8 bg-slate-500 group-hover:bg-sky-400 transition-colors"></span>Habilidades</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="mt-8 flex items-center gap-4">
+                        <a href="https://github.com/Edson-source" target="_blank" class="text-slate-400 hover:text-white transition-colors" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/edson-martins-7a7740295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-slate-400 hover:text-white transition-colors" aria-label="GitHub">
+                            <svg version="1.1" id="linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" viewBox="0 0 8.96 8.96" xml:space="preserve"><style type="text/css">
+	.st0{fill:#464646;}
+	.st1{fill:#D1D1D1;}
+</style><g><path class="st1" d="m2.511 0.895 -0.005 -0.002A1.222 1.222 0 0 0 2.05 0.805c-0.641 0 -0.931 0.339 -1.062 0.628 -0.078 0.151 -0.118 0.311 -0.119 0.475 -0.009 0.482 0.218 0.86 0.635 1.064q0.034 0.017 0.073 0.031h-0.253c-0.192 0 -0.348 0.156 -0.35 0.348q0 0.026 -0.011 0.712l0 3.782c0 0.029 0.004 0.057 0.01 0.085l0.011 0.042a0.35 0.35 0 0 0 0.34 0.265h1.42c0.193 0 0.35 -0.157 0.35 -0.35V3.353c0 -0.193 -0.157 -0.35 -0.35 -0.35h-0.294q0.012 -0.004 0.025 -0.009c0.3 -0.12 0.521 -0.35 0.64 -0.665q0.004 -0.01 0.007 -0.02c0.035 -0.115 0.058 -0.228 0.067 -0.337q0.002 -0.018 0.001 -0.036c-0.01 -0.493 -0.25 -0.863 -0.678 -1.042"/><path class="st1" d="M8.301 5.231c-0.008 -0.476 -0.104 -0.913 -0.286 -1.3a0.525 0.525 0 0 0 -0.005 -0.011c-0.346 -0.674 -0.944 -1.031 -1.729 -1.032a2.415 2.415 0 0 0 -0.028 0c-0.378 0 -0.709 0.092 -0.985 0.272a0.378 0.378 0 0 0 -0.138 -0.119 0.35 0.35 0 0 0 -0.157 -0.037h-1.42a0.35 0.35 0 0 0 -0.332 0.239l-0.011 0.032a0.35 0.35 0 0 0 -0.018 0.111v0.109c0.007 0.586 0.011 0.977 0.011 1.163v1.733l-0.011 1.297v0.147c0 0.076 0.016 0.146 0.048 0.209a0.35 0.35 0 0 0 0.313 0.193h1.42a0.35 0.35 0 0 0 0.313 -0.193c0.043 -0.086 0.047 -0.161 0.047 -0.419v-2.379c0.006 -0.099 0.021 -0.152 0.031 -0.178 0.051 -0.079 0.071 -0.107 0.075 -0.113 0.119 -0.155 0.226 -0.178 0.307 -0.179 0.153 0.004 0.401 0.019 0.401 0.67v2.44c0 0.193 0.157 0.35 0.35 0.35h1.057c0.125 0.004 0.218 0.005 0.286 0.005 0.111 0 0.184 -0.002 0.264 -0.042a0.35 0.35 0 0 0 0.194 -0.313c0 0 0 -2.655 0 -2.657"/></g><path id="linkedin" class="st0" d="M2.387 1.216q0.452 0.189 0.463 0.726 -0.011 0.126 -0.053 0.263 -0.126 0.337 -0.442 0.463 -0.137 0.042 -0.242 0.053 -0.316 0 -0.442 -0.063 -0.452 -0.221 -0.442 -0.747 0 -0.168 0.084 -0.326 0.189 -0.431 0.747 -0.431 0.168 0 0.326 0.063m0.337 6.669H1.335l-0.011 -0.042V4.066q0.011 -0.705 0.011 -0.715H2.756v4.534zm3.787 -2.44q0 -0.999 -0.747 -1.02 -0.347 0 -0.589 0.316 -0.032 0.042 -0.105 0.158 -0.063 0.126 -0.074 0.337v2.388q0 0.242 -0.011 0.263H3.565q-0.011 -0.021 -0.011 -0.053v-0.147l0.011 -1.294v-1.736q0 -0.284 -0.011 -1.168v-0.105l0.011 -0.032h1.42q0.021 0.011 0.011 0.053v0.568q0.021 -0.011 0.042 -0.053 0.4 -0.694 1.252 -0.684 0.989 0 1.42 0.842 0.242 0.515 0.252 1.157v2.651q-0.021 0.011 -0.389 0h-1.062z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Conteúdo Principal Direito -->
+            <main class="lg:col-span-8 p-4 sm:p-6 lg:p-8">
+                
+                <!-- Seção Resumo (Visível apenas em telas menores, pois já está na sidebar) -->
+                <section class="lg:hidden mb-16 fade-in" style="animation-delay: 0.2s;">
+                     <p class="text-slate-300 leading-relaxed">
+                        Recém-formado pela UFSC, com experiência prática em projetos de microcontroladores (ESP32, Arduino) e programação (C/C++, Python). Minha atuação vai da concepção e prototipagem à validação de sistemas. Meu TCC, uma estação meteorológica de baixo custo, resultou em um artigo publicado, demonstrando habilidade em documentação e inovação. Busco aplicar minha proatividade e conhecimento em um ambiente desafiador.
+                    </p>
+                </section>
+
+                <!-- Seção Experiência -->
+                <section id="experiencia" class="mb-16 fade-in" style="animation-delay: 0.4s;">
+                    <h2 class="text-xl font-bold text-white mb-8">Experiência</h2>
+                    <div class="relative timeline space-y-10 pl-6">
+                        <!-- Item 1 -->
+                        <div class="relative timeline-item pl-4">
+                            <p class="text-sm font-semibold text-sky-400">08/2022 – Atual</p>
+                            <h3 class="text-lg font-semibold text-slate-100 mt-1">Diretor de Eletrônica (Voluntário) - QuantumTeam</h3>
+                            <ul class="list-disc list-outside mt-3 ml-5 text-slate-400 space-y-2">
+                                <li>Liderança e gestão da equipe de eletrônica.</li>
+                                <li>Capacitação de novos membros em ferramentas para robôs de combate.</li>
+                                <li>Gerenciamento, busca e seleção de componentes eletrônicos.</li>
+                                <li>Desenvolvimento de software com Arduino e PlatformIO.</li>
+                            </ul>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="relative timeline-item pl-4">
+                            <p class="text-sm font-semibold text-sky-400">09/2024 – 12/2024</p>
+                            <h3 class="text-lg font-semibold text-slate-100 mt-1">Desenvolvedor de Sistemas Embarcados (Estágio) - HidroFEN</h3>
+                             <ul class="list-disc list-outside mt-3 ml-5 text-slate-400 space-y-2">
+                                <li>Ciclo completo de desenvolvimento de uma estação meteorológica: requisitos, seleção de sensores, implementação, processamento de dados e interface de monitoramento.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Seção Projetos -->
+                <section id="projetos" class="mb-16 fade-in" style="animation-delay: 0.6s;">
+                    <h2 class="text-xl font-bold text-white mb-8">Projetos Relevantes</h2>
+                    <div class="space-y-6">
+                         <!-- Projeto 1 -->
+                        <div class="p-6 rounded-lg glass-effect hover:border-sky-400/50 transition-all duration-300 group">
+                            <h3 class="text-lg font-semibold text-slate-100 group-hover:text-sky-300 transition-colors">Estação Meteorológica (TCC)</h3>
+                            <p class="mt-2 text-slate-400">Protótipo de baixo custo para monitoramento meteorológico com ESP32 e LoRa. O trabalho foi parte de um artigo publicado e apresentado no 3° Congresso Internacional de Engenharia Ambiental.</p>
+                        </div>
+                         <!-- Projeto 2 -->
+                        <div class="p-6 rounded-lg glass-effect hover:border-sky-400/50 transition-all duration-300 group">
+                            <h3 class="text-lg font-semibold text-slate-100 group-hover:text-sky-300 transition-colors">Servidor de Armazenamento (NAS)</h3>
+                            <p class="mt-2 text-slate-400">Servidor para armazenamento de documentos usando Raspberry Pi com módulo SSD, incluindo modelagem e impressão 3D de um case.</p>
+                        </div>
+                         <!-- Projeto 3 -->
+                        <div class="p-6 rounded-lg glass-effect hover:border-sky-400/50 transition-all duration-300 group">
+                            <h3 class="text-lg font-semibold text-slate-100 group-hover:text-sky-300 transition-colors">Casa Inteligente (IoT)</h3>
+                            <p class="mt-2 text-slate-400">Sistema para monitorar sensores e controlar atuadores com ESP8266, integrado ao assistente virtual do Google.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Seção Habilidades -->
+                <section id="habilidades" class="mb-16 fade-in" style="animation-delay: 0.8s;">
+                    <h2 class="text-xl font-bold text-white mb-8">Habilidades</h2>
+                     <div class="flex flex-wrap gap-3">
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">ESP32</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">ESP8266</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">LoRa</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">IoT</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">Raspberry Pi</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">Arduino</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">C/C++</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">Python</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">SQL</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">PlatformIO</span>
+                        <span class="bg-sky-400/10 text-sky-300 text-sm font-medium px-3 py-1.5 rounded-full">Solda Eletrônica</span>
+                     </div>
+                </section>
+
+                 <!-- Seção Educação -->
+                <section class="mb-16 fade-in" style="animation-delay: 1s;">
+                    <h2 class="text-xl font-bold text-white mb-8">Educação</h2>
+                    <div class="p-6 rounded-lg glass-effect">
+                        <h3 class="text-lg font-semibold text-slate-100">Bacharel em Engenharia de Computação</h3>
+                        <p class="text-md text-slate-400">Universidade Federal de Santa Catarina (UFSC)</p>
+                        <p class="text-sm text-slate-500">Araranguá, SC | 07/2018 – 07/2025</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
